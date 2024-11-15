@@ -1,0 +1,130 @@
+2024-11-15 10:12:46.339 +02:00 [FTL] Application startup exception
+System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });' or configure to generate a 'ProblemDetails' response in 'service.AddProblemDetails()'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener, IEnumerable`1 exceptionHandlers, IMeterFactory meterFactory, IProblemDetailsService problemDetailsService)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass5_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2024-11-15 10:12:46.367 +02:00 [ERR] Hosting failed to start
+System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });' or configure to generate a 'ProblemDetails' response in 'service.AddProblemDetails()'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener, IEnumerable`1 exceptionHandlers, IMeterFactory meterFactory, IProblemDetailsService problemDetailsService)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass5_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-15 10:13:44.235 +02:00 [INF] Now listening on: https://localhost:7165
+2024-11-15 10:13:44.257 +02:00 [INF] Now listening on: http://localhost:5087
+2024-11-15 10:13:44.340 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 10:13:44.343 +02:00 [INF] Hosting environment: Development
+2024-11-15 10:13:44.344 +02:00 [INF] Content root path: C:\Users\Gamers zone\source\repos\task2API\task2API
+2024-11-15 10:13:44.425 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2024-11-15 10:13:44.569 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 200 null text/html;charset=utf-8 144.7783ms
+2024-11-15 10:13:44.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2024-11-15 10:13:44.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-15 10:13:44.605 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 13.6232ms
+2024-11-15 10:13:44.632 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.6549ms
+2024-11-15 10:13:44.672 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2024-11-15 10:13:44.769 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.8099ms
+2024-11-15 10:16:52.009 +02:00 [INF] Now listening on: https://localhost:7165
+2024-11-15 10:16:52.029 +02:00 [INF] Now listening on: http://localhost:5087
+2024-11-15 10:16:52.115 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 10:16:52.118 +02:00 [INF] Hosting environment: Development
+2024-11-15 10:16:52.120 +02:00 [INF] Content root path: C:\Users\Gamers zone\source\repos\task2API\task2API
+2024-11-15 10:16:52.223 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2024-11-15 10:16:52.371 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 200 null text/html;charset=utf-8 147.9083ms
+2024-11-15 10:16:52.398 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2024-11-15 10:16:52.398 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-15 10:16:52.412 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 12.9797ms
+2024-11-15 10:16:52.433 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.6242ms
+2024-11-15 10:16:52.470 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2024-11-15 10:16:52.573 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.2332ms
+2024-11-15 10:17:03.349 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/api/Products/GetAll - null null
+2024-11-15 10:17:03.360 +02:00 [INF] Executing endpoint 'task2API.Controllers.ProductsController.GetAll (task2API)'
+2024-11-15 10:17:03.384 +02:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller task2API.Controllers.ProductsController (task2API).
+2024-11-15 10:17:04.223 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price]
+FROM [Products] AS [p]
+2024-11-15 10:17:04.350 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[task2API.Data.Models.Product, task2API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[task2API.DTOs.ProductsDto_s.DtoProductsGet, task2API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-15 10:17:04.361 +02:00 [INF] Executed action task2API.Controllers.ProductsController.GetAll (task2API) in 970.6081ms
+2024-11-15 10:17:04.366 +02:00 [INF] Executed endpoint 'task2API.Controllers.ProductsController.GetAll (task2API)'
+2024-11-15 10:17:04.377 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/api/Products/GetAll - 200 null application/json; charset=utf-8 1028.072ms
+2024-11-15 10:17:21.478 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7165/api/Products/Create - application/json 70
+2024-11-15 10:17:21.488 +02:00 [INF] CORS policy execution successful.
+2024-11-15 10:17:21.491 +02:00 [INF] Executing endpoint 'task2API.Controllers.ProductsController.Create (task2API)'
+2024-11-15 10:17:21.503 +02:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(task2API.DTOs.ProductsDto_s.DtoProductsCreateUpdate) on controller task2API.Controllers.ProductsController (task2API).
+2024-11-15 10:17:21.654 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__itemDto_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Name] = @__itemDto_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-11-15 10:17:21.665 +02:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-15 10:17:21.673 +02:00 [INF] Executed action task2API.Controllers.ProductsController.Create (task2API) in 160.5471ms
+2024-11-15 10:17:21.678 +02:00 [INF] Executed endpoint 'task2API.Controllers.ProductsController.Create (task2API)'
+2024-11-15 10:17:21.680 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7165/api/Products/Create - 400 null application/json; charset=utf-8 202.3112ms
+2024-11-15 10:23:34.252 +02:00 [INF] Now listening on: https://localhost:7165
+2024-11-15 10:23:34.274 +02:00 [INF] Now listening on: http://localhost:5087
+2024-11-15 10:23:34.398 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 10:23:34.398 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2024-11-15 10:23:34.400 +02:00 [INF] Hosting environment: Development
+2024-11-15 10:23:34.404 +02:00 [INF] Content root path: C:\Users\Gamers zone\source\repos\task2API\task2API
+2024-11-15 10:23:34.600 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 200 null text/html;charset=utf-8 203.399ms
+2024-11-15 10:23:34.635 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2024-11-15 10:23:34.635 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-15 10:23:34.652 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 16.2424ms
+2024-11-15 10:23:34.686 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.5696ms
+2024-11-15 10:23:34.951 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2024-11-15 10:23:35.064 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.9903ms
+2024-11-15 10:23:42.188 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/api/Products/GetAll - null null
+2024-11-15 10:23:42.200 +02:00 [INF] Executing endpoint 'task2API.Controllers.ProductsController.GetAll (task2API)'
+2024-11-15 10:23:42.222 +02:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller task2API.Controllers.ProductsController (task2API).
+2024-11-15 10:23:42.319 +02:00 [INF] Executed action task2API.Controllers.ProductsController.GetAll (task2API) in 89.948ms
+2024-11-15 10:23:42.324 +02:00 [INF] Executed endpoint 'task2API.Controllers.ProductsController.GetAll (task2API)'
+2024-11-15 10:23:42.327 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Message about the error
+   at task2API.Controllers.ProductsController.GetAll() in C:\Users\Gamers zone\source\repos\task2API\task2API\Controllers\ProductsController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-11-15 10:23:42.368 +02:00 [ERR] Catch error: Message about the error
+System.Exception: Message about the error
+   at task2API.Controllers.ProductsController.GetAll() in C:\Users\Gamers zone\source\repos\task2API\task2API\Controllers\ProductsController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-11-15 10:23:42.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/api/Products/GetAll - 500 null application/json; charset=utf-8 212.7713ms
+2024-11-15 10:25:19.815 +02:00 [INF] Now listening on: https://localhost:7165
+2024-11-15 10:25:19.836 +02:00 [INF] Now listening on: http://localhost:5087
+2024-11-15 10:25:19.933 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 10:25:19.935 +02:00 [INF] Hosting environment: Development
+2024-11-15 10:25:19.938 +02:00 [INF] Content root path: C:\Users\Gamers zone\source\repos\task2API\task2API
+2024-11-15 10:25:19.999 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - null null
+2024-11-15 10:25:20.140 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - 200 null text/html;charset=utf-8 142.4639ms
+2024-11-15 10:25:20.234 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - null null
+2024-11-15 10:25:20.234 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-15 10:25:20.245 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 10.3992ms
+2024-11-15 10:25:20.264 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.8996ms
+2024-11-15 10:25:20.298 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - null null
+2024-11-15 10:25:20.404 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.5115ms
